@@ -1,0 +1,28 @@
+name: Deploy Paso Elite Theme to WordPress
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'paso-elite/**'
+
+jobs:
+  web-deploy:
+    name: Auto Deploy to Live WordPress
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🚚 Get latest code
+        uses: actions/checkout@v4
+
+      - name: 📂 Sync Paso Elite Theme files via FTP/SFTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        if: env.FTP_SERVER != ''
+        env:
+          FTP_SERVER: ${{ secrets.FTP_SERVER }}
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          server-dir: wp-content/themes/paso-elite/
+          local-dir: ./paso-elite/
