@@ -12,9 +12,6 @@ if (!defined('ABSPATH')) {
 $phone       = paso_get_phone();
 $whatsapp    = paso_get_whatsapp();
 $slogan      = paso_get_slogan();
-$show_ann    = get_theme_mod('paso_show_announcement', true);
-$ann_text    = get_theme_mod('paso_announcement_text', '✨ Itu Road, Uyo · Open 7 Days A Week · Walk-ins & VIP Appointments Welcome');
-$ann_btn     = get_theme_mod('paso_announcement_btn', 'Chat on WhatsApp');
 $default_logo = get_template_directory_uri() . '/assets/images/real_logo.jpg';
 $logo_url    = has_custom_logo() ? wp_get_attachment_image_url(get_theme_mod('custom_logo'), 'full') : $default_logo;
 ?>
@@ -132,20 +129,7 @@ $logo_url    = has_custom_logo() ? wp_get_attachment_image_url(get_theme_mod('cu
     </defs>
   </svg>
 
-  <!-- =====================================================
-       ANNOUNCEMENT BAR (Controlled by Customizer)
-       ===================================================== -->
-  <?php if ($show_ann) : ?>
-  <div class="announcement-bar" role="region" aria-label="Quick announcement">
-    <div class="wrap announcement-wrap">
-      <span class="announcement-text"><?php echo esc_html($ann_text); ?></span>
-      <a href="https://wa.me/<?php echo esc_attr($whatsapp); ?>?text=Hello%20Paso%20Elite!%20I'd%20like%20to%20inquire%20about%20a%20salon%20appointment." target="_blank" rel="noopener" class="announcement-link">
-        <span><?php echo esc_html($ann_btn); ?></span>
-        <svg aria-hidden="true" focusable="false"><use href="#lucide-arrow-right" /></svg>
-      </a>
-    </div>
-  </div>
-  <?php endif; ?>
+
 
   <!-- =====================================================
        SITE HEADER (Modeled on SWOT Gadgets clean header)
