@@ -29,7 +29,7 @@ $img_dir = get_template_directory_uri() . '/assets/images/';
   <div class="solutions-layout">
     <!-- Featured Lifestyle Photo on the Left like SWOT -->
     <div class="solution-photo">
-      <img src="<?php echo esc_url($img_dir . 'IMG-20260918-WA0071.jpg.jpeg'); ?>" alt="Paso Elite Salon Environment in Uyo" loading="lazy" />
+      <img src="<?php echo esc_url($img_dir . 'female braids 2.jpeg'); ?>" alt="Paso Elite Unisex Salon Sanctuary at No 6 Itu Road, Uyo" decoding="async" />
       <div>
         <span class="eyebrow">A SANCTUARY OF CONFIDENCE</span>
         <h3>

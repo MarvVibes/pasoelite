@@ -58,7 +58,7 @@ $has_custom_posts = $lookbook_query->have_posts();
               $post_id    = get_the_ID();
               $badge      = get_post_meta($post_id, '_paso_badge', true);
               $wa_custom  = get_post_meta($post_id, '_paso_wa_msg', true);
-              $image_url  = has_post_thumbnail() ? get_the_post_thumbnail_url($post_id, 'large') : get_template_directory_uri() . '/assets/images/IMG-20260916-WA0016.jpg.jpeg';
+              $image_url  = has_post_thumbnail() ? get_the_post_thumbnail_url($post_id, 'large') : get_template_directory_uri() . '/assets/images/mens cut 3.jpeg';
 
               // Get category term
               $terms = get_the_terms($post_id, 'lookbook_cat');
@@ -75,7 +75,7 @@ $has_custom_posts = $lookbook_query->have_posts();
       ?>
           <article class="product" data-category="<?php echo esc_attr($category_slug); ?>">
             <div class="product-image">
-              <img src="<?php echo esc_url($image_url); ?>" alt="<?php the_title_attribute(); ?>" loading="lazy" />
+              <img src="<?php echo esc_url($image_url); ?>" alt="<?php the_title_attribute(); ?>" decoding="async" />
               <?php if (!empty($badge)) : ?>
                 <span><?php echo esc_html($badge); ?></span>
               <?php endif; ?>
@@ -99,7 +99,7 @@ $has_custom_posts = $lookbook_query->have_posts();
       ?>
           <article class="product" data-category="<?php echo esc_attr($item['category']); ?>">
             <div class="product-image">
-              <img src="<?php echo esc_url($item['image']); ?>" alt="<?php echo esc_attr($item['title']); ?>" loading="lazy" />
+              <img src="<?php echo esc_url($item['image']); ?>" alt="<?php echo esc_attr($item['title']); ?>" decoding="async" />
               <span><?php echo esc_html($item['badge']); ?></span>
             </div>
             <p class="product-category"><?php echo esc_html($item['cat_label']); ?></p>

@@ -13,7 +13,7 @@ $whatsapp   = paso_get_whatsapp();
 $headline   = get_theme_mod('paso_about_headline', 'Where good looks meet unshakable confidence.');
 $p1         = get_theme_mod('paso_about_p1', 'Paso Elite Unisex Salon was established with the vision to provide exceptional beauty and grooming services in a professional, comfortable, and welcoming environment at No 6 Itu Road, Uyo.');
 $p2         = get_theme_mod('paso_about_p2', 'At Paso Elite, we believe beauty and looking good is more than just appearance—it\'s about confidence, self-expression, and feeling good about yourself. Whether you are coming in for a fresh haircut, a new hairstyle, flawless nails, or a complete beauty transformation, we strive to make every visit worth remembering.');
-$about_img  = get_template_directory_uri() . '/assets/images/IMG-20260918-WA0036.jpg.jpeg';
+$about_img  = get_template_directory_uri() . '/assets/images/real_guy_barbing.jpg';
 ?>
 <!-- =====================================================
      ABOUT US SECTION (From Brand Details Document)
@@ -52,7 +52,7 @@ $about_img  = get_template_directory_uri() . '/assets/images/IMG-20260918-WA0036
 
     <div class="about-visuals">
       <div class="about-image-card">
-        <img src="<?php echo esc_url($about_img); ?>" alt="Paso Elite Salon Environment and Stations at No 6 Itu Road, Uyo" loading="lazy" />
+        <img src="<?php echo esc_url($about_img); ?>" alt="Paso Elite Salon Environment and Stations at No 6 Itu Road, Uyo" decoding="async" />
         <div class="about-image-overlay">
           <span class="eyebrow">NO 6 ITU ROAD · UYO</span>
           <h3>Executive Grooming Sanctuary</h3>

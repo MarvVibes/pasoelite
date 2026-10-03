@@ -31,7 +31,7 @@ $slogan  = paso_get_slogan();
     <!-- Pillar 1 -->
     <article class="why-card">
       <div class="why-card-thumb">
-        <img src="<?php echo esc_url($img_dir . 'IMG-20260918-WA0036.jpg.jpeg'); ?>" alt="Paso Elite Premium and Professional Salon Experience in Uyo" loading="lazy" />
+        <img src="<?php echo esc_url($img_dir . 'female braids 3.jpeg'); ?>" alt="VIP Air-Conditioned Comfort and Luxury Lounge at Paso Elite" decoding="async" />
         <span class="why-pill">VIP COMFORT</span>
       </div>
       <div class="why-card-body">
@@ -43,7 +43,7 @@ $slogan  = paso_get_slogan();
     <!-- Pillar 2 -->
     <article class="why-card">
       <div class="why-card-thumb">
-        <img src="<?php echo esc_url($img_dir . 'IMG-20260916-WA0016.jpg.jpeg'); ?>" alt="Master Stylists and Precision Barbering at Paso Elite" loading="lazy" />
+        <img src="<?php echo esc_url($img_dir . 'real_guy_barbing.jpg'); ?>" alt="Master Stylists and Precision Barbering at Paso Elite" decoding="async" />
         <span class="why-pill">MASTER ARTISANS</span>
       </div>
       <div class="why-card-body">
@@ -55,7 +55,7 @@ $slogan  = paso_get_slogan();
     <!-- Pillar 3 -->
     <article class="why-card">
       <div class="why-card-thumb">
-        <img src="<?php echo esc_url($img_dir . 'IMG-20260918-WA0042.jpg.jpeg'); ?>" alt="Clean and Welcoming Salon Environment with Hospital-Grade Sterilization" loading="lazy" />
+        <img src="<?php echo esc_url($img_dir . 'mens braidnig 2.jpeg'); ?>" alt="Clean and Welcoming Salon Environment with Hospital-Grade Sterilization" decoding="async" />
         <span class="why-pill">100% STERILE &amp; SAFE</span>
       </div>
       <div class="why-card-body">
@@ -67,7 +67,7 @@ $slogan  = paso_get_slogan();
     <!-- Pillar 4 -->
     <article class="why-card">
       <div class="why-card-thumb">
-        <img src="<?php echo esc_url($img_dir . 'IMG-20260918-WA0022.jpg.jpeg'); ?>" alt="Attention to Details and Customer Satisfaction" loading="lazy" />
+        <img src="<?php echo esc_url($img_dir . 'female braiding 1.jpeg'); ?>" alt="Attention to Details and Razor-Sharp Parting Precision" decoding="async" />
         <span class="why-pill">SURGICAL PRECISION</span>
       </div>
       <div class="why-card-body">
@@ -79,7 +79,7 @@ $slogan  = paso_get_slogan();
     <!-- Pillar 5 -->
     <article class="why-card">
       <div class="why-card-thumb">
-        <img src="<?php echo esc_url($img_dir . 'IMG-20260918-WA0046.jpg.jpeg'); ?>" alt="Bespoke Grooming Tailored to Personal Style" loading="lazy" />
+        <img src="<?php echo esc_url($img_dir . 'female braiding 5.jpeg'); ?>" alt="Bespoke Grooming Tailored to Personal Style" decoding="async" />
         <span class="why-pill">PERSONAL STYLE</span>
       </div>
       <div class="why-card-body">

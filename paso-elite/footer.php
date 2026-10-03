@@ -24,7 +24,7 @@ $logo_url     = has_custom_logo() ? wp_get_attachment_image_url(get_theme_mod('c
   <footer class="site-footer wrap">
     <div>
       <a class="logo" href="<?php echo esc_url(home_url('/')); ?>">
-        <img src="<?php echo esc_url($logo_url); ?>" alt="<?php bloginfo('name'); ?>" width="38" height="38" loading="lazy" />
+        <img src="<?php echo esc_url($logo_url); ?>" alt="<?php bloginfo('name'); ?>" width="38" height="38" decoding="async" />
         <div class="brand-text">
           <span class="brand-title"><?php bloginfo('name'); ?></span>
           <span class="brand-sub">UNISEX SALON · UYO</span>

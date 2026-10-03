@@ -87,12 +87,27 @@
   });
 
   // Category quick links across the page (e.g. from .category-small or .category tiles)
-  document.querySelectorAll('[data-filter]:not(.filter), [data-category]').forEach(link => {
+  document.querySelectorAll('.category-grid [data-category], .category-small [data-filter]').forEach(link => {
     link.addEventListener('click', (e) => {
       const filterTarget = link.getAttribute('data-filter') || link.getAttribute('data-category');
       if (filterTarget && filterTarget !== 'all') {
         filterCatalog(filterTarget);
       }
+    });
+  });
+
+  // Image load reliability safeguard: ensure images never remain stuck as empty boxes
+  window.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('img').forEach(img => {
+      img.addEventListener('error', () => {
+        if (!img.dataset.retried) {
+          img.dataset.retried = '1';
+          setTimeout(() => {
+            const rawSrc = img.src.split('?')[0];
+            img.src = rawSrc + '?r=' + Date.now();
+          }, 300);
+        }
+      });
     });
   });
 

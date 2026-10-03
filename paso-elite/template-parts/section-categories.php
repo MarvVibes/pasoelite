@@ -29,7 +29,7 @@ $img_dir = get_template_directory_uri() . '/assets/images/';
   <!-- 3 Large Category Showcase Tiles (1.4fr 1fr 1fr like SWOT) -->
   <div class="category-grid">
     <a class="category category-men" href="#lookbook" data-category="Men's Cuts">
-      <img src="<?php echo esc_url($img_dir . 'IMG-20260916-WA0016.jpg.jpeg'); ?>" alt="Men's Precision Fades and Beard Sculpting" loading="lazy" />
+      <img src="<?php echo esc_url($img_dir . 'men cut 2.jpeg'); ?>" alt="Men's Precision Fades and Beard Sculpting" decoding="async" />
       <div>
         <span>EXECUTIVE &amp; CORPORATE GROOMING</span>
         <h3>Men's Cuts</h3>
@@ -41,7 +41,7 @@ $img_dir = get_template_directory_uri() . '/assets/images/';
     </a>
 
     <a class="category category-women" href="#lookbook" data-category="Braids">
-      <img src="<?php echo esc_url($img_dir . 'IMG-20260918-WA0046.jpg.jpeg'); ?>" alt="Couture Hair Braiding & Wigs" loading="lazy" />
+      <img src="<?php echo esc_url($img_dir . 'wig installation.jpeg'); ?>" alt="Couture Hair Braiding & Wigs" decoding="async" />
       <div>
         <span>COUTURE BRAIDS &amp; WEAVES</span>
         <h3>Braids &amp; Wigs</h3>
@@ -53,7 +53,7 @@ $img_dir = get_template_directory_uri() . '/assets/images/';
     </a>
 
     <a class="category category-spa" href="#lookbook" data-category="Spa & Care">
-      <img src="<?php echo esc_url($img_dir . 'IMG-20260918-WA0036.jpg.jpeg'); ?>" alt="Luxury Spa & Pedicure" loading="lazy" />
+      <img src="<?php echo esc_url($img_dir . 'Nail fix.jpeg'); ?>" alt="Luxury Spa & Pedicure" decoding="async" />
       <div>
         <span>PAMPERING &amp; REVIVAL</span>
         <h3>Spa &amp; Grooming</h3>

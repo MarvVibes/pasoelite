@@ -14,7 +14,7 @@ $hero_eyebrow   = get_theme_mod('paso_hero_eyebrow', 'ITU ROAD · UYO, NIGERIA �
 $hero_headline  = get_theme_mod('paso_hero_headline', 'A place where good look meets confidence.');
 $hero_desc      = get_theme_mod('paso_hero_description', 'Whether you\'re closing deals, attending an event, preparing for your wedding, or refreshing your signature look—experience precision fades, couture braids, flawless frontal fixing, and organic scalp care at No 6 Itu Road, Uyo.');
 $custom_hero_img = get_theme_mod('paso_hero_image');
-$default_hero_img = get_template_directory_uri() . '/assets/images/IMG-20260916-WA0017.jpg.jpeg';
+$default_hero_img = get_template_directory_uri() . '/assets/images/men cut 2.jpeg';
 $hero_img       = !empty($custom_hero_img) ? $custom_hero_img : $default_hero_img;
 ?>
 <!-- =====================================================
@@ -22,9 +22,6 @@ $hero_img       = !empty($custom_hero_img) ? $custom_hero_img : $default_hero_im
      ===================================================== -->
 <section class="hero wrap" aria-labelledby="hero-title">
   <div class="hero-copy">
-    <p class="eyebrow">
-      <span class="status-dot"></span> <?php echo esc_html($hero_eyebrow); ?>
-    </p>
     <h1 id="hero-title">
       <?php echo nl2br(esc_html($hero_headline)); ?>
     </h1>
