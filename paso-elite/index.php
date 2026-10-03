@@ -9,6 +9,12 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
+// If visiting the front page or site root, display the complete salon experience
+if (is_front_page() || (is_home() && !is_paged())) {
+    include get_template_directory() . '/front-page.php';
+    return;
+}
+
 get_header();
 ?>
 

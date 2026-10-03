@@ -2250,3 +2250,42 @@ p {
     width: 40px;
   }
 }
+
+/* =====================================================
+   WORDPRESS INTEGRATION & CORE RESET SAFEGUARDS
+   Ensures 100% design fidelity inside WordPress
+   ===================================================== */
+body.admin-bar .site-header {
+  top: 32px;
+}
+
+@media screen and (max-width: 782px) {
+  body.admin-bar .site-header {
+    top: 46px;
+  }
+}
+
+/* Prevent WordPress Gutenberg global styles from overriding typography */
+body.home,
+body.page,
+body.single,
+body.blog,
+body {
+  background: var(--bg) !important;
+  color: var(--text);
+  font-family: var(--body);
+}
+
+body a {
+  text-decoration: none;
+}
+
+body h1, body h2, body h3, body h4, body h5, body h6 {
+  font-family: var(--display);
+}
+
+/* Ensure WordPress embeds / images inside layouts stay contained */
+img, svg, video {
+  max-width: 100%;
+}
+

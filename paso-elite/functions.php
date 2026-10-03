@@ -64,10 +64,10 @@ add_action('after_setup_theme', 'paso_elite_setup');
  * Enqueue styles and scripts
  */
 function paso_elite_scripts() {
-    // Google Fonts
+    // Google Fonts: DM Sans & Manrope (Exact match to index.html)
     wp_enqueue_style(
         'paso-elite-google-fonts',
-        'https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap',
+        'https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Manrope:wght@400;500;600;700;800&display=swap',
         array(),
         null
     );
@@ -107,7 +107,7 @@ function paso_elite_scripts() {
         'address'      => esc_attr(get_theme_mod('paso_address', 'No 6 Itu Road, Uyo, Akwa Ibom State, Nigeria')),
     ));
 }
-add_action('wp_enqueue_scripts', 'paso_elite_scripts');
+add_action('wp_enqueue_scripts', 'paso_elite_scripts', 100);
 
 /**
  * Helper template tags

@@ -17,4 +17,5 @@ GitHub Theme URI: MarvVibes/pasoelite
 GitHub Theme Branch: main
 */
 
-/* Core theme styles are enqueued from assets/css/index.css */
+/* Core theme styles */
+@import url('assets/css/index.css');

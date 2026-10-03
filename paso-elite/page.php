@@ -9,6 +9,12 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
+// If this page is designated as the Front Page in Settings -> Reading, render the full salon experience
+if (is_front_page()) {
+    include get_template_directory() . '/front-page.php';
+    return;
+}
+
 get_header();
 ?>
 

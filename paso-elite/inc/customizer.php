@@ -195,20 +195,21 @@ function paso_elite_customize_register($wp_customize) {
 
     // Hero Headline
     $wp_customize->add_setting('paso_hero_headline', array(
-        'default'           => 'A place where good look meets confidence.',
-        'sanitize_callback' => 'sanitize_text_field',
+        'default'           => "Grooming that<br />fits the way you<br /><span>live, lead &amp; shine.</span>",
+        'sanitize_callback' => 'wp_kses_post',
         'transport'         => 'refresh',
     ));
     $wp_customize->add_control('paso_hero_headline', array(
-        'label'   => __('Hero Main Headline', 'paso-elite'),
-        'section' => 'paso_elite_hero_section',
-        'type'    => 'text',
+        'label'       => __('Hero Main Headline', 'paso-elite'),
+        'description' => __('HTML tags like &lt;br /&gt; and &lt;span&gt; are allowed for styling.', 'paso-elite'),
+        'section'     => 'paso_elite_hero_section',
+        'type'        => 'textarea',
     ));
 
     // Hero Description
     $wp_customize->add_setting('paso_hero_description', array(
-        'default'           => 'Precision haircuts, master stitch braids, flawless wig installations, and executive grooming in an unhurried luxury atmosphere.',
-        'sanitize_callback' => 'sanitize_textarea_field',
+        'default'           => "Whether you're closing deals, attending an event, preparing for your wedding,<br class=\"desktop-break\" />or refreshing your signature look—experience precision fades, couture braids, flawless frontal fixing, and organic scalp care at No 6 Itu Road, Uyo.",
+        'sanitize_callback' => 'wp_kses_post',
         'transport'         => 'refresh',
     ));
     $wp_customize->add_control('paso_hero_description', array(

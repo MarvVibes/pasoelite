@@ -97,7 +97,7 @@
   });
 
   // Image load reliability safeguard: ensure images never remain stuck as empty boxes
-  window.addEventListener('DOMContentLoaded', () => {
+  const setupImageRetry = () => {
     document.querySelectorAll('img').forEach(img => {
       img.addEventListener('error', () => {
         if (!img.dataset.retried) {
@@ -109,7 +109,12 @@
         }
       });
     });
-  });
+  };
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', setupImageRetry);
+  } else {
+    setupImageRetry();
+  }
 
   // 4. Appointment Booking Form -> Direct WhatsApp Link Builder
   const bookingForm = document.getElementById('bookingForm');
@@ -145,7 +150,8 @@ I would like to reserve an appointment:
 Please confirm availability at No 6 Itu Road, Uyo.`;
 
       const encodedMessage = encodeURIComponent(message);
-      const whatsappUrl = `https://wa.me/2347014987308?text=${encodedMessage}`;
+      const waNum = (typeof window.pasoEliteConfig !== 'undefined' && window.pasoEliteConfig.whatsappNum) ? window.pasoEliteConfig.whatsappNum : '2347014987308';
+      const whatsappUrl = `https://wa.me/${waNum}?text=${encodedMessage}`;
 
       // Update proceed link
       if (whatsappProceedLink) {

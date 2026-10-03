@@ -1,5 +1,7 @@
 <?php
 /**
+ * Template Name: Salon Front Page
+ *
  * The template for displaying the front page
  *
  * @package Paso_Elite

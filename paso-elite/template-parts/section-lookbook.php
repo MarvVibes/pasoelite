@@ -118,5 +118,9 @@ $has_custom_posts = $lookbook_query->have_posts();
 
     <!-- Direct Inspiration CTA -->
     <?php get_template_part('template-parts/section', 'cta'); ?>
+
+    <p class="inventory-note">
+      Authentic photography from our studio at No 6 Itu Road, Uyo. Every tool—from clippers to combs and scissors—is physically sterilized with hospital-grade UV care before every client session.
+    </p>
   </div>
 </section>
